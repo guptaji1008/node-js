@@ -1,16 +1,8 @@
-const os = require("os")
+// Path module :-
 
-// console.log(os.arch())
+const path = require('path')
 
-const freeMemory = os.freemem()
-
-console.log(`${freeMemory/1024/1024/1024}`)
-
-const totalMemory = os.totalmem()
-
-console.log(`${totalMemory/1024/1024/1024}`)
-
-console.log(os.hostname())
-console.log(os.type())
-console.log(os.tmpdir())
-console.log(os.platform())
+console.log(path.dirname('C:/Users/91799/OneDrive/Desktop/node-js/index.js'))
+console.log(path.extname('C:/Users/91799/OneDrive/Desktop/node-js/index.js'))
+console.log(path.basename('C:/Users/91799/OneDrive/Desktop/node-js/index.js'))
+console.log(path.parse('C:/Users/91799/OneDrive/Desktop/node-js/index.js'))
